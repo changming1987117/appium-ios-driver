@@ -10,7 +10,7 @@ describe('When accessing an HTTPS encrypted site in Safari', function () {
   this.timeout(MOCHA_SAFARI_TIMEOUT);
 
   let sslServer;
-
+  let caps = Object.assign({}, desired);
   before(async function () {
     // Create an HTTPS server with a random pem certificate
     let privateKey = await pem.createPrivateKeyAsync();
@@ -20,10 +20,12 @@ describe('When accessing an HTTPS encrypted site in Safari', function () {
     sslServer = https.createServer({key: keys.serviceKey, cert: pemCertificate}, function (req, res) {
       res.end('Arbitrary text');
     }).listen(9758);
-    desired.customSSLCert = pemCertificate;
+
+
+    caps.customSSLCert = pemCertificate;
   });
 
-  const driver = setup(this, desired, {noReset: true}).driver;
+  const driver = setup(this, caps, {noReset: true}).driver;
 
   after(async () => {
     if (sslServer) {
