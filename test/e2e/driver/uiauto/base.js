@@ -63,8 +63,9 @@ async function newInstruments (bootstrapFile) {
     app: path.resolve(rootDir, 'test', 'assets', 'UICatalog.app'),
     bootstrap: bootstrapFile,
     simulatorSdkAndDevice: 'iPhone 6 (9.3)',
-    launchTries: 2,
+    launchTries: 5,
     withoutDelay: false,
+    launchTimeout: process.env.TRAVIS ? 240000 : 60000,
   });
 }
 

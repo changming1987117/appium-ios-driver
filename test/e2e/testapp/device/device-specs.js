@@ -1,11 +1,11 @@
 "use strict";
 
 import _ from 'lodash';
-import { Session } from '../helpers/session';
-import env from '../helpers/env';
-import desired from './desired';
+import { Session } from '../../helpers/session';
+import env from '../../helpers/env';
+import desired from '../desired';
 import B from 'bluebird';
-import '../helpers/setup_testlibs';
+import '../../helpers/setup_testlibs';
 
 describe('testapp - device @skip-real-device', function () {
   this.timeout(env.MOCHA_INIT_TIMEOUT);

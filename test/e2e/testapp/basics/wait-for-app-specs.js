@@ -1,5 +1,5 @@
-import setup from "../setup-base";
-import desired from './desired';
+import setup from "../../setup-base";
+import desired from '../desired';
 import _ from 'lodash';
 
 describe('testapp - wait-for-apps', function () {
@@ -24,4 +24,3 @@ describe('testapp - wait-for-apps', function () {
   test('waiting for one element', 'target.elements().length > 0;', true);
   test('bad script', 'blagimarg!!;', false);
 });
-

@@ -1,7 +1,7 @@
-import setup from "../setup-base";
-import desired from './desired';
+import setup from "../../setup-base";
+import desired from '../desired';
 import _ from 'lodash';
-import env from '../helpers/env';
+import env from '../../helpers/env';
 import unorm from 'unorm';
 
 

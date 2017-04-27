@@ -1,7 +1,7 @@
-import setup from "../setup-base";
-import desired from './desired';
+import setup from "../../setup-base";
+import desired from '../desired';
 import B from 'bluebird';
-import { throwMatchableError } from '../helpers/recipes';
+import { throwMatchableError } from '../../helpers/recipes';
 
 describe('testapp - context methods', function () {
   let session = setup(this, desired);

@@ -1,6 +1,6 @@
-import setup from "../setup-base";
+import setup from "../../setup-base";
 import B from 'bluebird';
-import desired from './desired';
+import desired from '../desired';
 
 
 describe('testapp - screenshots', function () {

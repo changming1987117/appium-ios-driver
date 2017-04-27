@@ -1,11 +1,19 @@
 sudo: required
 env:
-  # Run tests in parellel, up to 5 at once
+  # Run tests in parellel
   - DEVICE=ios93 TEST=unit FINAL_GULP=coveralls
-  - DEVICE=ios93 TEST=e2e/driver RECURSIVE=1
-  - DEVICE=ios93 TEST=e2e/testapp RECURSIVE=1
+  - DEVICE=ios93 TEST=e2e/driver
+  - DEVICE=ios93 TEST=e2e/driver/instruments
+  - DEVICE=ios93 TEST=e2e/driver/uiauto
+  - DEVICE=ios93 TEST=e2e/testapp/alerts
+  - DEVICE=ios93 TEST=e2e/testapp/basics
+  - DEVICE=ios93 TEST=e2e/testapp/device
+  - DEVICE=ios93 TEST=e2e/testapp/element
+  - DEVICE=ios93 TEST=e2e/testapp/gestures
+  - DEVICE=ios93 TEST=e2e/testapp/localization
   - DEVICE=ios93 TEST=e2e/uicatalog RECURSIVE=1
-  - DEVICE=ios93 TEST=e2e/safari RECURSIVE=1
+  - DEVICE=ios93 TEST=e2e/safari
+  - DEVICE=ios93 TEST=e2e/safari/webview
 language: node_js
 os: osx
 osx_image: xcode7.3

@@ -1,6 +1,6 @@
-import setup from "../setup-base";
-import desired from './desired';
-import { filterVisibleUiaSelector } from '../helpers/recipes';
+import setup from "../../setup-base";
+import desired from '../desired';
+import { filterVisibleUiaSelector } from '../../helpers/recipes';
 
 describe('testapp - simple', function () {
 

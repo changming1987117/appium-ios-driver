@@ -1,6 +1,6 @@
-import setup from "../setup-base";
-import desired from './desired';
-import { throwMatchableError } from '../helpers/recipes';
+import setup from "../../setup-base";
+import desired from '../desired';
+import { throwMatchableError } from '../../helpers/recipes';
 import B from 'bluebird';
 
 describe('testapp - find element', function () {

@@ -1,5 +1,5 @@
-import setup from "../setup-base";
-import desired from './desired';
+import setup from "../../setup-base";
+import desired from '../desired';
 
 describe('testapp - get attribute', function () {
   let session = setup(this, desired);

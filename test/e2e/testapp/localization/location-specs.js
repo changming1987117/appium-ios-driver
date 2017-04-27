@@ -1,9 +1,9 @@
-import setup from "../setup-base";
-import { Session } from '../helpers/session';
-import desired from './desired';
+import setup from "../../setup-base";
+import { Session } from '../../helpers/session';
+import desired from '../desired';
 import B from 'bluebird';
 import _ from 'lodash';
-import { throwMatchableError } from '../helpers/recipes';
+import { throwMatchableError } from '../../helpers/recipes';
 
 
 describe('testapp - location - 1 @skip-ci', function () {

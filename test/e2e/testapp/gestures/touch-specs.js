@@ -1,7 +1,7 @@
-import setup from "../setup-base";
-import desired from './desired';
+import setup from "../../setup-base";
+import desired from '../desired';
 import B from 'bluebird';
-import { okIfAlert } from '../helpers/recipes';
+import { okIfAlert } from '../../helpers/recipes';
 
 //let okIfAlert = require('../../../helpers/alert').okIfAlert,
 
